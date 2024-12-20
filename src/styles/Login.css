@@ -1,0 +1,120 @@
+/* Login Container */
+.login-container {
+  width: 360px;
+  margin: 40px auto;
+  min-height: 50vh;
+  padding: 30px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f1f1f1, #e6e6e6);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+.login-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input Styles */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+button.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Google Login */
+.google-login {
+  margin-top: 20px;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #db4437;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #c1351d;
+}
+
+/* Error Message */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Toggle Authentication Link */
+.toggle-auth {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.toggle-auth:hover {
+  color: #0056b3;
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 400px) {
+  .login-container {
+    width: 280px;
+    padding: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  button.submit-btn,
+  .google-btn {
+    font-size: 14px;
+  }
+}

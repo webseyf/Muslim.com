@@ -1,0 +1,165 @@
+/* Root Variables for Consistent Styling */
+:root {
+  --primary-color: #007bff;
+  --primary-color-dark: #0056b3;
+  --secondary-color: #db4437;
+  --secondary-color-dark: #c1351d;
+  --border-radius: 10px;
+  --box-shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 4px 15px rgba(0, 0, 0, 0.2);
+  --font-size-base: 16px;
+  --font-size-heading: 26px;
+  --font-weight-bold: bold;
+  --padding-base: 15px;
+  --transition-speed: 0.3s;
+}
+
+/* General Styling for Signup Container */
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 35px 25px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  background: #ffffff;
+  box-shadow: var(--box-shadow-light);
+  background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.signup-container:hover {
+  transform: translateY(-5px);
+}
+
+.signup-container h2 {
+  font-size: var(--font-size-heading);
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight-bold);
+}
+
+.signup-form {
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  color: #555;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Input Fields Styling */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  font-size: var(--font-size-base);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  background-color: #f7f7f7;
+  color: #333;
+  transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Submit Button Styling */
+button.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+button.submit-btn:hover {
+  background-color: var(--primary-color-dark);
+  transform: scale(1.02);
+}
+
+/* Google Signup Button Styling */
+.google-signup {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.google-btn:hover {
+  background-color: var(--secondary-color-dark);
+  transform: scale(1.02);
+}
+
+/* Error Message Styling */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Toggle Auth Link Styling */
+.toggle-auth {
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+}
+
+.toggle-auth:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 20px;
+    margin-top: 10%;
+  }
+  
+  .signup-container h2 {
+    font-size: 22px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  button.submit-btn,
+  button.google-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

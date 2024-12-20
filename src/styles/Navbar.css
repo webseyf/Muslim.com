@@ -1,0 +1,368 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #2a2a72, #009ffd); /* New gradient colors */
+  padding: 0.8rem 1.5rem;
+  position: sticky;
+  top: 0;
+  padding-top: 19px;
+  padding-bottom: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.down {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  gap: 2px; /* Add spacing between the image and text */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Match parent text color */
+}
+
+.nav-text {
+  margin: 0; /* Remove default margin from the <p> tag */
+  font-size: 18px; /* Adjust font size */
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Watch Now Button */
+
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #eaeaea; /* Soft gray color */
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #ffbb33; /* New hover and active color */
+  text-shadow: 0 2px 4px rgba(255, 187, 51, 0.7);
+}
+
+/* Menu Toggle Icon */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar links (for mobile) */
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(14, 14, 14, 0.95);
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    transform: translateX(100%);
+    width: 100%;
+    height: 100vh;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 101;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-links.active {
+    transform: translateX(0);
+  }
+
+  /* Menu toggle button */
+  .menu-toggle {
+    display: block;
+    z-index: 11111;
+  }
+
+  /* Adjusting Watch Now button */
+  .watch-now {
+    margin: 0 auto;
+  }
+
+  /* Aligning navbar items when the menu is open */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-links li {
+    margin: 1rem 0;
+    
+  }
+}
+.logout-btn{
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+span{
+  color: hsl(58, 100%, 51%);
+  font-weight: bold;
+}
+.signup{
+  padding: 0.6rem 1.2rem;
+  background-color: #0f7eff; /* New button color */
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #dea127;
+}
+.signup:hover{
+  background-color: #005bb5; /* Hover effect for the button */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+/* Plus Icon Button */
+
+
+.watch-link{
+  text-decoration: none;
+  text-decoration-line: none;
+}
+.watch-now {
+  padding: 0.6rem 1.2rem;
+  background-color: #ffbb33;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.watch-now:hover {
+  background-color: #005bb5; /* Hover effect for the button */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+a{
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #2a2a72, #009ffd); /* Gradient colors */
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Adjust spacing between links */
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Aligns links with logo */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #eaeaea;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #ffbb33;
+  text-shadow: 0 2px 4px rgba(255, 187, 51, 0.7);
+}
+
+/* Menu Toggle Icon */
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    margin-top: 14%;
+    right: 0;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background: rgba(14, 14, 14, 0.95);
+    transform: translateX(100%);
+    height: 100vh;
+    max-width: 250px;
+    transition: transform 0.3s ease;
+    z-index: 101;
+  }
+
+  .navbar-links.active {
+    transform: translateX(0);
+  }
+  .navbar-logo h1 {
+    margin-left: 0;
+    font-size: 1.2rem;
+   
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+/* Alignments for Larger Screens */
+@media (min-width: 1024px) {
+  .navbar-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-links {
+    gap: 2.5rem; /* Uniform spacing for large screens */
+  }
+
+
+}
+
+/* High Resolution Screens */
+@media (min-width: 1440px) {
+  .navbar-container {
+    max-width: 1280px;
+  }
+
+  .navbar-links {
+    gap: 3rem; /* Slightly more spacing for ultra-wide screens */
+  }
+}
+
+.plus {
+  color: white; /* Text color */
+  padding: 0.3rem 1.2rem;
+  background-color: #ffbb33; /* Background color */
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; /* Center the icon inside the button */
+}
+
+.plus:hover {
+  background-color: #ffa500; /* Slightly darker hover effect */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+.plus:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(255, 187, 51, 0.6); /* Focus effect */
+}
+
+/* Plus Icon (for the actual icon inside the button) */
+.plu {
+  display: inline-block;
+  font-size: 1.5rem; /* Keep the icon size */
+  color: white; /* White color for the plus sign */
+}
+
+
+

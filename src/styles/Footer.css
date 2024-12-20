@@ -1,0 +1,65 @@
+/* Body styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes full height */
+  margin: 0; /* Remove default body margin */
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1; /* This allows the main content to grow and push the footer down */
+}
+
+/* Footer styles */
+.footer {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* This pushes the footer to the bottom of the page */
+}
+
+/* Footer content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centering content vertically */
+  text-align: center;
+  gap: 1rem; /* Adds space between items */
+}
+
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social .social-icons a {
+  color: #ff6347;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #ff4500;
+  transform: scale(1.2);
+}
+
+.footer-copyright p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  
+}
